@@ -16,8 +16,11 @@
 3. [アーキテクチャ](#3-アーキテクチャ)
 4. [Harness Engineering の設計](#4-harness-engineering-の設計)
 5. [Loop Engineering の構想](#5-loop-engineering-の構想)
+   - [Agentic Workflow：現在のレビュー・修正の運用（手動）](#55-現在のレビュー修正の運用手動)（資料: [docs/agentic-workflow.md](docs/agentic-workflow.md)）
 6. [安全性・承認ゲート](#6-安全性承認ゲート)
+   - [Context Engineering：AI への情報の渡し方](#63-context-engineeringai-への情報の渡し方)（資料: [docs/context-engineering.md](docs/context-engineering.md)）
 7. [技術スタック](#7-技術スタック)
+   - [Evaluation Engineering：評価設計](#evaluation-engineering評価設計)（資料: [docs/evaluation.md](docs/evaluation.md)）
 8. [現在の進捗](#8-現在の進捗)
 9. [今後のロードマップ](#9-今後のロードマップ)
 10. [ポートフォリオとしての技術的な見どころ](#10-ポートフォリオとしての技術的な見どころ)
@@ -349,6 +352,8 @@ stateDiagram-v2
 詳細: [docs/roadmap.md](docs/roadmap.md)
 
 ## 10. ポートフォリオとしての技術的な見どころ
+
+> 以下は**設計上の見どころ**です。いずれも現在は設計段階で、アプリケーションに実装済みの機能ではありません。
 
 1. **AI に制御権を渡さない設計** — エージェントには「1 回の実装・修正」だけを任せ、状態遷移・停止判断・上限はアプリ側の遷移表と型で持ちます。
 2. **fail closed の安全設計** — 書き込みを許す 10 条件のうち 1 つでも欠ければ起動しません。権限設定を信じるのではなく、`SandboxVerifier` で「禁止した操作が実際に失敗すること」を起動のたびに確かめます。
