@@ -1,0 +1,64 @@
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+*.tsbuildinfo
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+.vercel/
+
+# Logs
+*.log
+logs/
+
+# Test output (evals/results/ is intentionally NOT ignored: evaluation results are versioned)
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Environment variables and secrets (only .env.example with dummy values is tracked)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+id_rsa*
+id_ed25519*
+secrets/
+credentials*.json
+service-account*.json
+
+# Claude Code local personal settings
+.claude/settings.local.json
+.claude/*.local.*
+CLAUDE.local.md
+
+# Autonomous loop: run history and disposable workspaces (must never be committed)
+runs/
+.loop-workspaces/
+.workspaces/
+
+# Editors
+.idea/
+.vscode/
+*.swp
