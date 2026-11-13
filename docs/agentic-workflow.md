@@ -2,7 +2,7 @@
 
 | 項目 | 内容 |
 |---|---|
-| 状態 | **運用中（手動）**の開発プロセス。アプリの機能ではない |
+| 状態 | **運用中**（手動）の開発プロセス。アプリの機能ではない |
 | 対象 | 本プロジェクトの設計・調査・実装・レビューを、複数の AI と人で分担する進め方 |
 | 関連 | [Context Engineering](./context-engineering.md) / [ロードマップ](./roadmap.md) / [Loop Engineering](./loop-engineering.md) |
 
