@@ -108,7 +108,7 @@
 
 ## 3. 出力仕様（Phase 1 の分析結果スキーマ・案）
 
-Zod スキーマを**単一の正（SSOT: Single Source of Truth）**とし、LLM への応答形式の指定（JSON Schema）・API 応答の検証・UI の型・評価の入力を、すべてここから導出する設計です。
+Zod スキーマを**単一の正**（SSOT: Single Source of Truth）とし、LLM への応答形式の指定（JSON Schema）・API 応答の検証・UI の型・評価の入力を、すべてここから導出する設計です。
 
 ```ts
 // 案。項目名・上限値は Phase 1 の実装開始時に確定する（ANL-U1）
